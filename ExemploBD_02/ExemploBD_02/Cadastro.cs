@@ -12,15 +12,16 @@ using System.Windows.Forms;
 
 namespace ExemploBD_02
 {
-    public partial class Form1 : Form
+    public partial class Cadastro : Form
     {
-        public Form1()
+        public Cadastro()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSalvar_Click(object sender, EventArgs e)
         {
+
             Heroi heroi = new Heroi();
             heroi.Nome = txtNome.Text;
             heroi.NomePessoa = txtNomePessoa.Text;
@@ -42,6 +43,9 @@ namespace ExemploBD_02
             {
                 MessageBox.Show("Deu ruim, chame os prog.");
             }
+
+
+
         }
     }
 }

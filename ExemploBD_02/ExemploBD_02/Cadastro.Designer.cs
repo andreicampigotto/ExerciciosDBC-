@@ -1,6 +1,6 @@
 ﻿namespace ExemploBD_02
 {
-    partial class Form1
+    partial class Cadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,9 @@
             this.btnSalvar.Size = new System.Drawing.Size(109, 31);
             this.btnSalvar.TabIndex = 0;
             this.btnSalvar.Text = "SALVAR";
+            this.btnSalvar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblNome
             // 
@@ -199,6 +201,7 @@
             // dtHeroi
             // 
             this.dtHeroi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtHeroi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtHeroi.Location = new System.Drawing.Point(182, 219);
             this.dtHeroi.Name = "dtHeroi";
             this.dtHeroi.Size = new System.Drawing.Size(159, 22);
